@@ -1,0 +1,30 @@
+<div class="flex justify-center items-center">
+  <form
+    [formGroup]="loginForm"
+    (submit)="submitLoginForm()"
+    class="flex flex-col gap-2 w-[600px] justify-center"
+  >
+    <app-logo class="mb-4"/>
+    <label for="email" class="block text-sm">
+      Email :
+    </label>
+    <input
+      id="email"
+      formControlName="email"
+      type="email"
+      placeholder="email"
+      class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none bg-white/50"
+    />
+    <label for="password" class="block text-sm">
+      Password :
+    </label>
+    <input
+      id="password"
+      formControlName="password"
+      type="password"
+      placeholder="password"
+      class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none bg-white/50"
+    />
+    <button type="submit" class="btn-primary mt-2">Login</button>
+  </form>
+</div>
