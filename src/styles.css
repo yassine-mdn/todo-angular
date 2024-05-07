@@ -8,3 +8,21 @@
 * {
   font-family: 'Rubik',  sans-serif;
 }
+
+
+.mesh {
+  background-color:#99c2ff;
+  background-image:
+    radial-gradient(at 82% 10%, hsla(56,95%,67%,1) 0px, transparent 50%),
+    radial-gradient(at 85% 40%, hsla(183,90%,67%,1) 0px, transparent 50%),
+    radial-gradient(at 89% 5%, hsla(100,74%,71%,1) 0px, transparent 50%),
+    radial-gradient(at 5% 44%, hsla(188,87%,77%,1) 0px, transparent 50%),
+    radial-gradient(at 15% 95%, hsla(208,83%,74%,1) 0px, transparent 50%),
+    radial-gradient(at 47% 68%, hsla(148,90%,67%,1) 0px, transparent 50%),
+    radial-gradient(at 29% 7%, hsla(215,97%,68%,1) 0px, transparent 50%);
+}
+
+textarea:focus, input:focus{
+  outline: none;
+}
+
