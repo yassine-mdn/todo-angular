@@ -17,6 +17,7 @@ export class InputFieldComponent {
 
   @Input() label: string = '';
   @Input() type: string = 'text';
+  @Input() placeholder: string = '';
   @Output() valueChange = new EventEmitter<string>();
 
   control: FormControl = new FormControl('', Validators.required);

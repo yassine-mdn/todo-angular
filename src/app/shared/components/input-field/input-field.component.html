@@ -6,7 +6,7 @@
     id="hs-toggle-password"
     [formControl]="control"
     class="py-3 px-4 block w-full border-gray-200 rounded-lg text-sm focus:border-blue-500 focus:ring-blue-500 disabled:opacity-50 disabled:pointer-events-none bg-white/50"
-    placeholder="Enter password"
+    placeholder="{{ placeholder }}"
   >
   @if (control.invalid && control.touched) {
     <div class="text-red-500 text-sm mt-2">
