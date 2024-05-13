@@ -1,0 +1,25 @@
+<div class="py-3 px-4 w-full border-gray-200 bg-white/50 rounded-lg text-md flex items-center gap-2">
+  @if (!todo.is_completed) {
+    <button class="flex items-center justify-center">
+      <ng-icon name="heroCheckCircle" class="flex-shrink-0 scale-150 text-gray-400"></ng-icon>
+    </button>
+    <h6 class="truncate">{{ todo.item }}</h6>
+  } @else {
+    <button class="flex items-center justify-center">
+      <ng-icon name="heroCheckCircleSolid" class="flex-shrink-0 scale-150"></ng-icon>
+    </button>
+    <h6 class="truncate text-gray-400 line-through">{{ todo.item }}</h6>
+  }
+  <div class="ml-auto flex gap-6 items-center">
+    <button class="flex items-center justify-center">
+      <ng-icon
+        [name]="todo.is_important?'heroStarSolid':'heroStar'"
+        [ngClass]="todo.is_important?'flex-shrink-0 scale-150 text-yellow-400':'flex-shrink-0 scale-150 text-gray-400'"
+      >
+      </ng-icon>
+    </button>
+    <button class="flex items-center justify-center hover:bg-gray-300/50 rounded-lg p-1.5">
+      <ng-icon name="heroEllipsisHorizontal" class="flex-shrink-0 scale-150 text-gray-400"></ng-icon>
+    </button>
+  </div>
+</div>
